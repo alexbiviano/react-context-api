@@ -1,11 +1,14 @@
 import React from 'react';  
 import PostsPage from './components/PostsPage';  
+import PostProvider from './contexts/PostContext';  
 
 const App = () => {  
     return (  
-        <div>  
-            <PostsPage />  
-        </div>  
+        <PostProvider>  
+            <div>  
+                <PostsPage />  
+            </div>  
+        </PostProvider>  
     );  
 };  
 
