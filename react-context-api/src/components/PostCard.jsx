@@ -1,12 +1,13 @@
 import React from 'react';  
 
-// Componente PostCard   
 const PostCard = ({ title, content, category }) => {  
     return (  
-        <div className="post-card" style={styles.card}>  
-            <h2>{title}</h2>  
-            <p>{content}</p>  
-            <span>{category}</span>  
+        <div className="card">  
+            <div className="card-body">  
+                <h5 className="card-title">{title}</h5>  
+                <p className="card-text">{content}</p>  
+                <span className="badge badge-info">{category}</span>  
+            </div>  
         </div>  
     );  
 };  

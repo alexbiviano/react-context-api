@@ -1,19 +1,23 @@
+// src/PostsList.jsx  
 import React, { useContext } from 'react';  
-import { PostContext } from '../contexts/PostContext'; 
+import { PostContext } from '../contexts/PostContext';  
+import PostCard from './PostCard';  
 
 const PostsList = () => {  
     const { posts } = useContext(PostContext);  
 
     return (  
-        <ul>  
+        <div className="row">  
             {posts.map(post => (  
-                <li key={post.id}>  
-                    <h2>{post.title}</h2>  
-                    <p>{post.content}</p>  
-                    <span>{post.category}</span>  
-                </li>  
+                <div className="col-md-4 mb-4" key={post.id}>  
+                    <PostCard  
+                        title={post.title}  
+                        content={post.content}  
+                        category={post.category}  
+                    />  
+                </div>  
             ))}  
-        </ul>  
+        </div>  
     );  
 };  
 

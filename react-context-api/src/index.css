@@ -1,0 +1,39 @@
+.card {  
+    border: 1px solid #ccc; /* Bordo grigio chiaro */  
+    border-radius: 15px; /* Angoli arrotondati */  
+    padding: 20px; /* Padding interno */  
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione */
+    cursor: pointer;  
+}  
+
+/* Effetto hover sulla card */  
+.card:hover {  
+    transform: translateY(-5px); /* Sollevare la card quando ci passi sopra */  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombra più intensa */  
+}  
+
+/* Stile per il titolo delle card */  
+.card-title {  
+    font-size: 1.5rem; /* Dimensione del font */  
+    color: #333; /* Colore del testo */  
+}  
+
+/* Stile per il contenuto delle card */  
+.card-text {  
+    font-size: 1rem; /* Dimensione del font */  
+    color: #555; /* Colore del testo */  
+}  
+
+/* Stile per le categorie */  
+.badge {  
+    font-size: 0.9rem; /* Dimensione del font */  
+    padding: 5px 10px; /* Padding della badge */  
+    border-radius: 10px; /* Angoli arrotondati per la badge */  
+    background-color: #007bff; /* Colore di sfondo */  
+    color: white; /* Colore del testo */  
+}  
+
+/* Stile per la riga dei posts */  
+.row {  
+    margin-top: 20px; /* Spaziatura verso l'alto */  
+}  
