@@ -1,4 +1,4 @@
-// src/PostsList.jsx  
+
 import React, { useContext } from 'react';  
 import { PostContext } from '../contexts/PostContext';  
 import PostCard from './PostCard';  
